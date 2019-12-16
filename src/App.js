@@ -1,6 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Child from "./Child";
+
+function HelloType1(props){
+  return <div>Hi {props.name}</div>
+}
+
+function HelloType2({name}){
+  return <div>Hi {name}</div>
+}
 
 function App() {
   return (
@@ -18,6 +27,9 @@ function App() {
         >
           Learn React
         </a>
+        <Child/>
+        <HelloType1 name="HJY"/>
+        <HelloType2 name="HJY"/>
       </header>
     </div>
   );
