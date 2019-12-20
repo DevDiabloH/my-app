@@ -1,15 +1,20 @@
 import React from 'react';
 //import PropTypes from "prop-types";
 import './App.css';
-import Calculator from './Calculator';
-import Clock from './Clock';
+
+import ClockClassStyle from './ClockClassStyle';
+import ClockHookStyle from './ClockHookStyle';
+import CounterClassStyle from './CounterClassStyle';
+import CounterHookStyle from './CounterHookStyle';
 
 class App extends React.Component{
   render(){
     return (
       <div>
-        <Clock/>
-        <Calculator/>
+        <ClockClassStyle/>
+        <ClockHookStyle/>
+        <CounterHookStyle/>
+        <CounterClassStyle/>
       </div>
     );
   }

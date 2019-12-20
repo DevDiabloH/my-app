@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Calculator extends React.Component{
+class CounterClassStyle extends React.Component{
     state = {
         index: 0
     };
@@ -16,7 +16,7 @@ class Calculator extends React.Component{
     render(){
         return (
             <div>
-                <h1>The number is [{this.state.index}]</h1>
+                <h1>Class Style [{this.state.index}]</h1>
                 <button onClick={this.minus}>-</button>
                 <button onClick={this.add}>+</button>
             </div>
@@ -24,4 +24,4 @@ class Calculator extends React.Component{
     }
 }
 
-export default Calculator;
+export default CounterClassStyle;

@@ -1,7 +1,6 @@
 import React from 'react';
 
-// React Component Style Clock
-class Clock extends React.Component{
+class ClockClassStyle extends React.Component{
     state = {
         date: new Date()
     };
@@ -28,4 +27,4 @@ class Clock extends React.Component{
     }
 }
 
-export default Clock;
+export default ClockClassStyle;
